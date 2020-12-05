@@ -1,0 +1,59 @@
+/* 3.10- Blog Section */
+.blog 
+{
+    background: #f8f8f8;
+}
+.blog-item
+{
+    width: 30%;
+    background: var(--whiteColor);
+}
+
+.blog-item-img img
+{
+    width: 100%; /*width 100% from its parent*/
+}
+
+.blog-info /*this div for padding all elements in the blog item except the blog-img*/
+{
+    padding: 20px;
+}
+
+.blog-list
+{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.blog-list li
+{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.blog-list li i
+{
+    color:var(--mainColor);
+}
+
+.blog-title
+{
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.blog-desc
+{
+    color: var(--grayColor);
+    line-height: 1.5;
+}
+
+.blog-link
+{
+    color: var(--mainColor);
+}
+
+.blog-item.mg
+{
+    margin: 0 5%;
+}

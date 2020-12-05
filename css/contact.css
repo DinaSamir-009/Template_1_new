@@ -1,0 +1,92 @@
+/* 3.11- Contact Section */
+.contact-content
+{
+    text-align: center;
+}
+
+.contact-item
+{
+    width: 30%;
+}
+
+.contact-item i
+{
+    color: #7ba7ff;
+}
+
+.contact-item.mg
+{
+    margin: 0 5%;
+}
+
+.contact-item-title
+{
+    margin: 20px 0;
+}
+
+.contact-item-info
+{
+    color: var(--grayColor);
+}
+
+.contact-form
+{
+    margin: 0 110px;
+}
+
+.contact-info input
+{
+    display: inline-block;
+    background-color: #f8f8f8;
+    border: 0;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin: 8px 5px;
+    font-size: 15px;
+    color: var(--grayColor);
+}
+
+.contact-info .input-name,
+.contact-info .input-email
+{
+    width: 40%;
+}
+.contact-form .contact-subject
+{
+    background-color: #f8f8f8;
+    border: 0;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin: 20px 95px;
+    font-size: 15px;
+    color:var(--grayColor);
+    display: block;
+    width: 81%;
+}
+
+.contact-form textarea
+{
+    background-color: #f8f8f8;
+    border: 0;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin: 20px 95px;
+    font-size: 15px;
+    color:var(--grayColor);
+    display: block;
+    width: 81%;
+}
+
+.contact-form .contact-submit
+{
+    display: block;
+    margin: auto;
+    min-width:170px;
+    padding: 15px 0;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--whiteColor);
+    background: var(--mainColor);
+    margin-top:20px;
+}

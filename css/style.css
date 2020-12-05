@@ -1,0 +1,169 @@
+/* 
+    1- Common Styles
+    2- General Styles
+    3- Sections
+        3.0- Header
+        3.1- Home Section
+        3.2- About Section
+        3.3- Portofolio Section
+        3.4- Offer Section
+        3.5- Services Section
+        3.6- Number Section
+        3.7- Pricing Section
+        3.8- Testimonial Section
+        3.9- Team Section
+        3.10- Blog Section 
+        3.11- Contact Section
+        3.12- Footer Section 
+ */
+
+/* 1- Common Styles*/
+/*  
+    - container
+    - overlay
+    - opacity hover
+    - section header
+    - section padding
+    - hover effect 1 (Left to right)
+    - hover effect 2 (Top to bottom)
+*/
+.overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+
+.hover-opacity
+{
+    transition: opacity .5s;
+/* This makes the hover on the button slower and for opacity only not for all elements */
+}
+
+.hover-opacity:hover
+{
+    opacity: 0.8;
+}
+
+.ltr-effect ,
+.tb-effect
+{
+    position: relative;
+}
+.ltr-effect:after , .tb-effect:after
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #333;
+    z-index: -1;
+}
+
+.ltr-effect:after
+
+{
+    width: 0;
+    transition: width .5s;
+}
+
+.ltr-effect:hover::after
+{
+    width: 100%;
+}
+
+.tb-effect:after
+{
+   
+    width: 100%;
+    height: 0;
+    transition: height .5s;
+}
+
+.tb-effect:hover::after
+{
+    height: 100%;
+}
+/* 2- General CSS Style */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*css3*/
+}
+
+:root
+{
+    --mainColor:#6195ff;
+    --grayColor:#999;
+    --whiteColor:#fff;
+}
+
+.container
+{
+    width: 80%;
+    margin: auto;
+}
+
+body
+{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.clear{clear: both;}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: montserrat,sans-serif;
+}
+
+button
+{
+    font-family:inherit;
+    /*It will inhert the font-family:'Varela Round', sans-serif; from body*/
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.pd-y
+{
+    padding: 120px 0;
+}
+
+.section-header
+{
+    text-align: center;
+}
+
+.section-header .section-title
+{
+    font-size: 35px;
+}
+
+.section-header .line
+{
+    display: block;
+    margin: 0 auto 70px auto;
+    width: 60px;
+    height: 5px;
+    background-color:var(--mainColor);
+}
+
+
+/* 3- Section Styles */
+/* Each section is put in a sperate css stylesheet */
+
+
+
+

@@ -1,0 +1,100 @@
+/* 3.0- Header Section */
+.header
+{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* .header-content
+{
+    /* overflow: hidden; to solve float problem 
+}*/ 
+
+.header .logo
+{
+    width: 40%;
+}
+
+.header .logo img
+{
+    width:20%;
+    margin-top: 15px;
+}
+
+.header .nav
+{
+    width: 60%;
+    text-align: right;
+}
+
+.header .nav > li
+{
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+}
+
+.header .nav > li > a
+{
+    color: var(--whiteColor);
+    display: block;
+    padding: 30px 15px;
+    font-size: 15px;
+}
+
+.header .nav > li > a.active:after,
+.header .nav > li > a:after
+{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color:var(--mainColor);
+    transition: width .5s;
+    margin-top: 2px;
+}
+
+.header .nav > li  a.active:after
+{
+    width: 100%;
+}
+
+.header .nav > li > a:after
+{
+    width: 0;
+}
+.header .nav > li > a:hover::after
+{
+    width: 100%;
+}
+.dropdown
+{
+    position: relative;
+}
+.dropdown-menu
+{
+    position: absolute;
+    background: var(--mainColor);
+    width: 150px;
+    text-align: center;
+    left: -50%;
+    top:70%;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s , visibility;
+}
+
+.dropdown-menu a
+{
+    color: var(--whiteColor);
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu
+{
+    opacity: 1;
+    visibility: visible;
+}
